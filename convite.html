@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convite Especial</title>
+    <link rel="stylesheet" href="convite.css">
+</head>
+<body>
+    <div class="container">
+        <main>
+            <h1>Convite Especial</h1>
+            <p>Olá! Você está convidado para um evento especial. Por favor, confirme sua presença e escolha o que gostaria de fazer.</p>
+            <form>
+                <div class="form-group">
+                    <label>Escolha suas atividades preferidas:</label>
+                </div>
+
+                <section>
+                    <h2>Date Opções</h2>
+                    <fieldset>
+                        <legend>Você prefere um date durante o dia ou noite?</legend>
+                        <label><input id="dia" type="radio" name="dia-noite" value="dia" checked> Dia</label>
+                        <label><input id="noite" type="radio" name="dia-noite" value="noite"> Noite</label>
+                    </fieldset>
+                    <fieldset id="opcoes-dia">
+                        <legend>Opções Dia</legend>
+                        <label><input id="piquenique" type="checkbox" name="dia-options" value="piquenique" checked> Piquenique</label>
+                        <label><input id="sorvete" type="checkbox" name="dia-options" value="sorvete"> Sorvete</label>
+                        <label><input id="almoço" type="checkbox" name="dia-options" value="almoço"> Almoço</label>
+                    </fieldset>
+                    <fieldset id="opcoes-noite" style="display: none;">
+                        <legend>Opções Noite</legend>
+                        <label><input id="cinema" type="checkbox" name="noite-options" value="cinema" checked> Cinema</label>
+                        <label><input id="barzinho" type="checkbox" name="noite-options" value="barzinho"> Barzinho</label>
+                        <label><input id="jantar" type="checkbox" name="noite-options" value="jantar"> Jantar</label>
+                    </fieldset>
+                    <button type="submit" class="submit-btn">Enviar Resposta</button>
+                </section>
+            </form>
+        </main>
+    </div>
+
+    <script src="convite.js"></script>
+</body>
+</html>
